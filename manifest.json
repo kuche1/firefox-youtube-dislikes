@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "youtube-dislikes",
+  "version": "1.0",
+
+  "description": "Calculated dislikes based on views and likes",
+
+  "icons": {
+    "48": "icons/border-48.png",
+    "96": "icons/border-96.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/watch?v=*"],
+      "js": ["youtube-dislikes.js"]
+    }
+  ]
+
+}
